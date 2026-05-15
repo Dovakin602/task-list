@@ -2,41 +2,41 @@
 
 class Sub_task:
     def __init__(self, title, description, end_date, start_date, completed_date):
-        self.title = title
-        self.description = description
-        self.end_date = end_date
-        self.start_date = start_date
-        self.completed_date = completed_date
+        self.__title = title
+        self.__description = description
+        self.__end_date = end_date
+        self.__start_date = start_date
+        self.__completed_date = completed_date
 
     
 
 
     def getTitle(self):
-        return self.title
+        return self.__title
     
     def getDescription(self):
-        return self.description
+        return self.__description
 
     
     def getEndDate(self):
-        return self.end_date
+        return self.__end_date
     
     def getStartDate(self):
-        return self.start_date
+        return self.__start_date
     
 
     def setTitle(self, title):
-        self.title =title
+        self.__title = title
 
     def setDescription(self, description):
-        self.description = description
+        self.__description = description
 
     
     def setEndDate(self, end_date):
-        self.end_date = end_date
+        self.__end_date = end_date
 
     def removeCompletedDate(self):
-        self.completed_date=None
+        self.__completed_date=None
 
     def setCompletedDate(self, completed_date):
-        self.completed_date = completed_date   
+        self.__completed_date = completed_date   
